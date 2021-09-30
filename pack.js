@@ -59,6 +59,13 @@ function clickId (id, operation) {
         eval(operation);
     })
 }
+// affiche une alerte() quand on clique sur un element (par id) avec le texte attendu
+function clickAlerte (id, text) {
+    document.getElementById(id).addEventListener("click", ()=> {
+        alerte(text);
+    })
+}
+//execute un rand facile
 function rand(nombre, base) {
     if (base===undefined) base=1;
     return (Math.floor(Math.random()*nombre))+base;
