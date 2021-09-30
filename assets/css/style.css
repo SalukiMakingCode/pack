@@ -1,0 +1,80 @@
+body {
+  background-image: url("../img/background.jpg");
+}
+body header nav {
+  background-color: #000000B0;
+  height: 2rem;
+  width: 100%;
+}
+body header h1 {
+  background-color: #eaeaeaC0;
+  text-align: center;
+  font-size: 2.5rem;
+  padding-top: 1rem;
+  padding-bottom: 1rem;
+}
+body main {
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: space-around;
+  height: 41rem;
+  margin-top: 1.5rem;
+}
+body main nav {
+  background-color: #FFFFFFD0;
+  width: 20%;
+  max-height: 100%;
+  overflow: auto;
+}
+body main nav h2 {
+  text-align: center;
+  text-decoration: underline;
+  font-size: 1.5rem;
+  font-weight: bold;
+  padding-top: 1rem;
+  padding-bottom: 1rem;
+}
+body main nav ul {
+  padding-left: 1rem;
+  list-style-type: none;
+}
+body main nav ul li {
+  padding-bottom: 0.5rem;
+  font-size: 1.2rem;
+}
+body main nav ul li mark {
+  cursor: pointer;
+}
+body main article {
+  background-color: #eeeeeeF0;
+  width: 75%;
+  overflow: auto;
+}
+body main article h2 {
+  text-align: center;
+  text-decoration: underline;
+  font-size: 2rem;
+  font-weight: bold;
+  padding-top: 1rem;
+  padding-bottom: 2rem;
+}
+body main article p {
+  font-size: 1.2rem;
+  padding-left: 2rem;
+  padding-right: 2rem;
+  padding-bottom: 1rem;
+  line-height: 1.8rem;
+}
+body main article h3 {
+  text-align: center;
+  text-decoration: underline;
+  font-size: 1.5rem;
+  font-weight: bold;
+  padding-top: 1rem;
+  padding-bottom: 2rem;
+}
+body main article code {
+  background-color: #bbbbbb;
+}
+
+/*# sourceMappingURL=style.css.map */
