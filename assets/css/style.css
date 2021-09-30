@@ -1,6 +1,10 @@
 body {
   background-image: url("../img/background.jpg");
 }
+body header {
+  margin: 0 auto;
+  width: 97.5%;
+}
 body header nav {
   background-color: #000000B0;
   height: 1rem;
@@ -48,6 +52,7 @@ body main nav ul li mark {
 body main article {
   background-color: #eeeeeeF0;
   width: 75%;
+  max-height: 100%;
   overflow: auto;
 }
 body main article h2 {
