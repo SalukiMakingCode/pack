@@ -66,6 +66,16 @@ body {
         padding-right: 2rem;
         padding-bottom: 1rem;
         line-height: 1.8rem;
+        & #demoAlerte {
+          text-decoration: underline;
+          color:blue;
+          cursor: pointer;
+        }
+        & #demoAlerte2 {
+          text-decoration: underline;
+          color:blue;
+          cursor: pointer;
+        }
       }
       & h3 {
         text-align: center;
@@ -77,6 +87,27 @@ body {
       }
       & code {
         background-color: #bbbbbb;
+      }
+      & .warning {
+        color:red;
+      }
+      & .bold {
+        font-weight: bold;
+      }
+      & #reset {
+        display:none;
+      }
+      & #animate {
+        display:none;
+      }
+      & #alerte {
+        display:none;
+      }
+      & #clickAlerte {
+        display:none;
+      }
+      & #rand {
+        display:none;
       }
     }
   }

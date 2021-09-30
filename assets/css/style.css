@@ -70,6 +70,16 @@ body main article p {
   padding-bottom: 1rem;
   line-height: 1.8rem;
 }
+body main article p #demoAlerte {
+  text-decoration: underline;
+  color: blue;
+  cursor: pointer;
+}
+body main article p #demoAlerte2 {
+  text-decoration: underline;
+  color: blue;
+  cursor: pointer;
+}
 body main article h3 {
   text-align: center;
   text-decoration: underline;
@@ -80,6 +90,27 @@ body main article h3 {
 }
 body main article code {
   background-color: #bbbbbb;
+}
+body main article .warning {
+  color: red;
+}
+body main article .bold {
+  font-weight: bold;
+}
+body main article #reset {
+  display: none;
+}
+body main article #animate {
+  display: none;
+}
+body main article #alerte {
+  display: none;
+}
+body main article #clickAlerte {
+  display: none;
+}
+body main article #rand {
+  display: none;
 }
 
 /*# sourceMappingURL=style.css.map */
