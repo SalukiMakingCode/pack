@@ -53,13 +53,14 @@ function alerte(text) {
     document.getElementById("alertText").innerHTML=text;
     document.getElementById("alert").style.display="flex";
 }
-document.getElementById("alertCloseButton").addEventListener("click", ()=> {
-    document.getElementById("alert").style.display="none";
-})
 // execute un code js quand on clique sur un element.id
 function clickId (id, operation) {
     document.getElementById(id).addEventListener("click", ()=> {
         eval(operation);
     })
+}
+function rand(nombre, base) {
+    if (base===undefined) base=1;
+    return (Math.floor(Math.random()*nombre))+base;
 }
 //})();
