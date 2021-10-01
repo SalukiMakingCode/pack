@@ -1,31 +1,31 @@
-document.getElementById("sendReset").addEventListener("click", ()=> {
-    document.querySelectorAll(".inArticle").forEach((element) =>document.getElementById(element.id).style.display="none");
-    document.getElementById("reset").style.display="block";
+id("sendReset").addEventListener("click", ()=> {
+    selectAll(".inArticle").forEach((element) =>id(element.id).style.display="none");
+    id("reset").style.display="block";
 })
 
-document.getElementById("sendAnimate").addEventListener("click", ()=> {
-    document.querySelectorAll(".inArticle").forEach((element) =>document.getElementById(element.id).style.display="none");
-    document.getElementById("animate").style.display="block";
+id("sendAnimate").addEventListener("click", ()=> {
+    selectAll(".inArticle").forEach((element) =>id(element.id).style.display="none");
+    id("animate").style.display="block";
 })
 
-document.getElementById("sendAlerte").addEventListener("click", ()=> {
-    document.querySelectorAll(".inArticle").forEach((element) =>document.getElementById(element.id).style.display="none");
-    document.getElementById("alerte").style.display="block";
+id("sendAlerte").addEventListener("click", ()=> {
+    selectAll(".inArticle").forEach((element) =>id(element.id).style.display="none");
+    id("alerte").style.display="block";
 })
 
-document.getElementById("sendClickAlerte").addEventListener("click", ()=> {
-    document.querySelectorAll(".inArticle").forEach((element) =>document.getElementById(element.id).style.display="none");
-    document.getElementById("clickAlerte").style.display="block";
+id("sendClickAlerte").addEventListener("click", ()=> {
+    selectAll(".inArticle").forEach((element) =>id(element.id).style.display="none");
+    id("clickAlerte").style.display="block";
 })
 
-document.getElementById("sendRand").addEventListener("click", ()=> {
-    document.querySelectorAll(".inArticle").forEach((element) =>document.getElementById(element.id).style.display="none");
-    document.getElementById("rand").style.display="block";
+id("sendRand").addEventListener("click", ()=> {
+    selectAll(".inArticle").forEach((element) =>id(element.id).style.display="none");
+    id("rand").style.display="block";
 })
 
-document.getElementById("sendId").addEventListener("click", ()=> {
-    document.querySelectorAll(".inArticle").forEach((element) =>document.getElementById(element.id).style.display="none");
-    document.getElementById("id").style.display="block";
+id("sendId").addEventListener("click", ()=> {
+    selectAll(".inArticle").forEach((element) =>id(element.id).style.display="none");
+    id("id").style.display="block";
 })
 
 clickAlerte("demoAlerte", "Votre texte ici");
