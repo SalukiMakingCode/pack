@@ -30,12 +30,12 @@ id("sendId").addEventListener("click", ()=> {
 
 id("sendSelect").addEventListener("click", ()=> {
     selectAll(".inArticle").forEach((element) =>id(element.id).style.display="none");
-    id("id").style.display="block";
+    id("select").style.display="block";
 })
 
 id("sendSelectAll").addEventListener("click", ()=> {
     selectAll(".inArticle").forEach((element) =>id(element.id).style.display="none");
-    id("id").style.display="block";
+    id("selectAll").style.display="block";
 })
 
 clickAlerte("demoAlerte", "Votre texte ici");
