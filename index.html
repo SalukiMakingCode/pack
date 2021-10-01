@@ -23,6 +23,8 @@
         <li><mark id="sendClickAlerte">clickAlerte();</mark></li>
         <li><mark id="sendId">id();</mark></li>
         <li><mark id="sendRand">rand();</mark></li>
+        <li><mark id="sendSelect">select();</mark></li>
+        <li><mark id="sendSelectAll">selectAll();</mark></li>
         </ul>
     </nav>
     <article id="article">
@@ -112,6 +114,22 @@
              comme, par exemple, id("idDeVotreElement").style.display=none</p>
         </div>
 
+        <div id="select" class="inArticle">
+            <h2>select();</h2>
+            <p class="bold">Utilisation : select("votreElement");</p>
+            <p>Simple et efficace, cette fonction remplace document.querySelector("votreElement")</p>
+            <p>Vous pouvez bien sur lui affecté toutes les propriétés habituelles de document.querySelector("idDeVotreElement");
+                comme, par exemple, select("VotreElement").style.display=none</p>
+            <p>N'oubliez pas que l'on parle d'élément, il faut donc rajouter # pour un id et . pour une classe à votre selector</p>
+        </div>
+
+        <div id="selectAll" class="inArticle">
+            <h2>selectAll();</h2>
+            <p class="bold">Utilisation : selectAll("votreElement");</p>
+            <p>Simple et efficace, cette fonction remplace document.querySelectorAll("votreElement")</p>
+            <p>Vous pouvez bien sur lui affecté toutes les propriétés habituelles de document.querySelectorAll("idDeVotreElement");
+                comme, par exemple, selectAll("VotreElement").style.display=none</p>
+        </div>
     </article>
 </main>
 <script src="./assets/js/article.js"></script>
