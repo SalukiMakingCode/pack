@@ -34,31 +34,38 @@
         <h2>C'est quoi Pack.js ?</h2>
         <p>Pack.js est un framework javascript et css.</p>
         <p>Il comprend nativement un reset.css (qui remets toutes les configurations navigateurs sur le même niveau) ainsi que
-        <a href="https://animate.style/" target="_blank">animate.css</a> pour animer vos pages</p>
+        <a href="https://animate.style/" target="_blank" rel="noopener">animate.css</a> pour animer vos pages</p>
         <p>L'objectif de Pack.js est de vous permettre de coder plus simplement en simplifiant des commandes que nous utilisons tous fréquemment</p>
         <p>Ce projet est open source, vous pouvez l'utiliser autant que vous le souhaitez et pour quelque usage que ce soit</p>
         <section>
             <h3>Comment installer Pack.js</h3>
-            <p>Rien de plus simple, placer simplement ce code <code>&lt;script src="https://salukimakingcode.github.io/pack/packfull.js"&gt;&lt;/script&gt;</code> sur votre page web JUSTE APRES l'ouverture de la balise head.</p>
+            <p>Rien de plus simple, placer simplement ce code sur votre page web JUSTE APRES l'ouverture de la balise head :
+            <code>
+                &lt;link href="https://salukimakingcode.github.io/pack/pack.css" rel="stylesheet"/&gt;<br/>
+                &lt;script src="https://salukimakingcode.github.io/pack/packfull.js"&gt;&lt;/script&gt;
+            </code>
+            </p>
         </section>
         </div>
 
         <div id="reset" class="inArticle">
         <h2>Reset.css</h2>
         <p>Un reset.css est inclus nativement dans Pack.js, celui-ci vous permet de remettre à zéro
-        les configurations natives des navigateurs.</p><p>Le reset utilisé est le suivant :</p>
-        <p>a, abbr, acronym, address, applet, article, aside, audio, b, big, blockquote, body, canvas, caption, center, cite, code, dd, del, details, dfn, div, dl, dt, em, fieldset, figcaption, figure, font, footer, form, h1, h2, h3, h4, h5, h6, header, hgroup, hr, html, i, iframe, img, ins, kbd, label, legend, li, mark, menu, nav, object, ol, p, pre, q, s, samp, section, small, span, strike, strong, sub, summary, sup, svg, table, tbody, td, tfoot, th, thead, time, tr, tt, u, ul, var, video {<br/>
+        les configurations natives des navigateurs.</p>
+        <p>Le reset.css configure aussi les REM pour qu'ils correspondent à : 1 REM = 10 px </p>
+        <p>Le reset utilisé est le suivant :</p>
+        <p><code>a, abbr, acronym, address, applet, article, aside, audio, b, big, blockquote, body, canvas, caption, center, cite, code, dd, del, details, dfn, div, dl, dt, em, fieldset, figcaption, figure, font, footer, form, h1, h2, h3, h4, h5, h6, header, hgroup, hr, html, i, iframe, img, ins, kbd, label, legend, li, mark, menu, nav, object, ol, p, pre, q, s, samp, section, small, span, strike, strong, sub, summary, sup, svg, table, tbody, td, tfoot, th, thead, time, tr, tt, u, ul, var, video {<br/>
           margin: 0;<br/>
           padding: 0;<br/>
           border: 0;<br/>
-          font-size: 100%;<br/>
+          font-size: 62.5%;<br/>
           font: inherit;<br/>
           vertical-align: baseline;<br/>
           font-weight: 400;<br/>
         }<br/>
         mark {<br/>
           background-color: transparent;<br/>
-        }</p>
+        }</code></p>
         </div>
 
         <div id="animate" class="inArticle">
