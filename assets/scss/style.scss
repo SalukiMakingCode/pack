@@ -94,20 +94,11 @@ body {
       & .bold {
         font-weight: bold;
       }
-      & #reset {
-        display:none;
-      }
-      & #animate {
-        display:none;
-      }
-      & #alerte {
-        display:none;
-      }
-      & #clickAlerte {
-        display:none;
-      }
-      & #rand {
-        display:none;
+      & .inArticle{
+        display: none;
+        &#homepage {
+          display:block;
+        }
       }
     }
   }

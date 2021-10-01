@@ -97,20 +97,11 @@ body main article .warning {
 body main article .bold {
   font-weight: bold;
 }
-body main article #reset {
+body main article .inArticle {
   display: none;
 }
-body main article #animate {
-  display: none;
-}
-body main article #alerte {
-  display: none;
-}
-body main article #clickAlerte {
-  display: none;
-}
-body main article #rand {
-  display: none;
+body main article .inArticle#homepage {
+  display: block;
 }
 
 /*# sourceMappingURL=style.css.map */
