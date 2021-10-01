@@ -23,5 +23,10 @@ document.getElementById("sendRand").addEventListener("click", ()=> {
     document.getElementById("rand").style.display="block";
 })
 
+document.getElementById("sendId").addEventListener("click", ()=> {
+    document.querySelectorAll(".inArticle").forEach((element) =>document.getElementById(element.id).style.display="none");
+    document.getElementById("id").style.display="block";
+})
+
 clickAlerte("demoAlerte", "Votre texte ici");
 clickAlerte("demoAlerte2", "Votre texte ici");
