@@ -22,6 +22,7 @@
         <li><mark id="sendAnimate">animate.css</mark></li>
         <li><mark id="sendAlerte">alerte();</mark></li>
         <li><mark id="sendClickAlerte">clickAlerte();</mark></li>
+        <li><mark id="sendMenu">createMenu();</mark></li>
         <li><mark id="sendId">id();</mark></li>
         <li><mark id="sendRand">rand();</mark></li>
         <li><mark id="sendSelect">select();</mark></li>
@@ -98,6 +99,47 @@
         <p class="warning">Attention : Cette fonction ne fonctionne que sur des éléments apparaissant au chargement de la page (display:none; compris).
         Dans le cas ou l'élément apparaitrais de façon dynamique après le chargement de la page, elle ne fonctionnera pas !</p>
         <p><br/><span id='demoAlerte2'>Cliquer ici pour un exemple</span></p>
+        </div>
+
+        <div id="menu" class="inArticle">
+            <h2>createMenu();</h2>
+            <p class="bold">Utilisation : createMenu(backgroundColor, color, height, width, align);</p>
+            <p>Cette fonction permet de construire un menu horizontal</p>
+            <p>Les options :</p>
+            <p>backgroundColor : taper les 6 chiffres du code hexadécimal de la couleur de fond du menu (sans le #)</p>
+            <p>color : taper les 6 chiffres du code hexadécimal de la couleur du texte des liens du menu (sans le #)</p>
+            <p>height : taper le chiffre de la taille (en rem) du texte des liens (avec pack.js, 1rem = 10px)</p>
+            <p>width : taper 2 chiffres. Ces chiffres représente en pourcentage la largeur totale qui sera pris par le menu.
+            le tout sera centré</p>
+            <p>align : align peut prendre 5 valeurs différentes : flex-start, flex-end, center, space-around, space-between.
+            Ces différentes valeurs définissent l'alignement des différents liens du menu.</p>
+            <p></p>
+            <p>Exemple : createMenu("FF333D", "FFFFFF", "5", "90", "80");</p>
+            <p></p>
+            <p>Une fois le menu crée, vous pouvez ajouter des elements à celui-ci avec <strong>elementMenu()</strong> et <strong>elementMenuLogo()</strong></p>
+            <p></p>
+            <h2>elementMenu();</h2>
+            <p class="bold">Utilisation : elementMenu(name, url, title, fontSize, blank);</p>
+            <p>Cette fonction permet d'ajouter un element à un menu horizontal. Il est à placer en dessous de createMenu; ou
+            en-dessous d'un autre elementMenu();</p>
+            <p>Les options :</p>
+            <p>name : taper l'ancre du lien que vous souhaitez configurer.</p>
+            <p>url : taper l'url du lien que vous souhaitez configurer.</p>
+            <p>title : taper le title du lien que vous souhaitez configurer.</p>
+            <p>fontSize : taper la taille en rem de votre lien (si vous laissez "" dans ce champ, la taille sera calculée automatiquement.</p>
+            <p>blank : taper "yes" afin de préciser que vous souhaitez que le lien s'ouvre dans une nouvelle fenêtre. Laisser cette option
+            vide ou taper "no" si vous souhaitez que le lien s'ouvre dans la même fenêtre.</p>
+            <p></p>
+            <p>Exemple : elementMenu ("Accueil", "index.html", "home", "", "no");</p>
+            <p></p>
+            <h2>elementMenuLogo();</h2>
+            <p class="bold">Utilisation : elementMenuLogo(url, alt);</p>
+            <p>Cette fonction permet d'ajouter un logo à un menu horizontal. Il est à placer en dessous de createMenu;</p>
+            <p>Les options :</p>
+            <p>url : taper le lien de l'image du logo que vous souhaitez configurer.</p>
+            <p>alt : taper le alt du logo que vous souhaitez configurer.</p>
+            <p></p>
+            <p>Exemple : elementMenuLogo ("./assets/img/logo.jpg", "logo de notre entreprise");</p>
         </div>
 
         <div id="rand" class="inArticle">

@@ -38,5 +38,10 @@ id("sendSelectAll").addEventListener("click", ()=> {
     id("selectAll").style.display="block";
 })
 
+id("sendMenu").addEventListener("click", ()=> {
+    selectAll(".inArticle").forEach((element) =>id(element.id).style.display="none");
+    id("menu").style.display="block";
+})
+
 clickAlerte("demoAlerte", "Votre texte ici");
 clickAlerte("demoAlerte2", "Votre texte ici");
