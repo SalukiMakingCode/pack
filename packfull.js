@@ -132,11 +132,11 @@ function createMenu(backgroundColor, color, height, width, align) {
         }
     }
 
-
-
 }
 
-function elementMenu(name, url, title, fontSize, blank) {
+
+function elementMenu(name, url, title, fontSize, img, blank) {
+    let size=(fontSize/3)*2;
     let order=document.getElementsByClassName("pack_menu_li").length;
     let elem = document.createElement('li');
     let elemBurger = document.createElement('li');
@@ -146,17 +146,20 @@ function elementMenu(name, url, title, fontSize, blank) {
         let height=id("pack_menu_nav").style.height;
         height=height.split("rem");
         fontSize=(height[0]/11)*5;
+        size=(fontSize/3)*2;
         fontSize=fontSize+"rem";
     }
     else fontSize=fontSize+"rem";
     elem.id = "pack_menu_li"+order;
     elem.className = "pack_menu_li";
-    elem.innerHTML="<a href='"+url+"' "+blank+" title='"+title+"'>"+name+"</a>";
+    if (img==="" || img===undefined) elem.innerHTML="<a href='"+url+"' "+blank+" title='"+title+"'>"+name+"</a>";
+    else elem.innerHTML="<a href='"+url+"' "+blank+" title='"+title+"'><img src='"+img+"' alt='"+name+"' class='iconeMenu' style='height:"+size+"rem;'/>"+name+"</a>";
     elem.style.fontSize=fontSize;
     id("pack_menu_ul").append(elem);
     elemBurger.id = "pack_menu_burger_li"+order;
     elemBurger.className = "pack_menu_burger_li";
-    elemBurger.innerHTML="<a href='"+url+"' "+blank+" title='"+title+"'>"+name+"</a>";
+    if (img==="" || img===undefined) elemBurger.innerHTML="<a href='"+url+"' "+blank+" title='"+title+"'>"+name+"</a>";
+    else elemBurger.innerHTML="<a href='"+url+"' "+blank+" title='"+title+"'><img src='"+img+"' alt='"+name+"' class='iconeMenu' style='height:"+size+"rem;'/>"+name+"</a>";
     elemBurger.style.fontSize=fontSize;
     id("pack_menu_burger_ul").append(elemBurger);
 }

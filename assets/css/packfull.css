@@ -113,6 +113,9 @@ mark {
     padding-right: 1.5rem;
   }
 }
+#pack_header nav ul#pack_menu_ul li img {
+  padding-right: 0.2rem;
+}
 #pack_header nav ul#pack_menu_ul li a:link {
   color: inherit;
 }
@@ -144,6 +147,9 @@ mark {
   padding-left: 1rem;
   padding-bottom: 0.5rem;
   list-style: none;
+}
+#pack_header #pack_menu_burger ul li img {
+  padding-right: 1rem;
 }
 
 /*# sourceMappingURL=packfull.css.map */
