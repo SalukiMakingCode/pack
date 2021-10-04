@@ -1,0 +1,120 @@
+@import '../css/reset';
+
+#alert {
+  display: none;
+  position: fixed;
+  z-index: 2;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  overflow: auto;
+  background-color: #000;
+  background-color: rgba(0, 0, 0, 0.4);
+  & #alert-content {
+    background-color: #fefefe;
+    margin: auto;
+    margin-top: 100px;
+    padding: 1rem;
+    border: 10px solid #888;
+    width: 60%;
+    & #alertText {
+      padding: 1rem;
+      font-size: 1.2rem;
+    }
+    & #alertClose {
+      text-align: center;
+      margin: 2rem;
+      & #alertCloseButton {
+        background-color: #bbb;
+        padding: 0.8rem;
+        border-radius: 10%;
+        border: solid 1px #000;
+        cursor: pointer;
+      }
+    }
+  }
+}
+#pack_header {
+  margin:0 auto;
+  display:flex;
+  margin-top:1rem ;
+  flex-flow: column wrap;
+  & nav {
+    margin:0 auto;
+    display:flex;
+    align-items: center;
+    justify-content: space-around;
+    width:100%;
+    @media screen and (max-width:800px)  {
+      justify-content: space-between;
+    }
+    & img {
+     padding-left: 1rem;
+    }
+    & #pack_burger {
+      padding-right: 1rem;
+      @media screen and (min-width:800px)  {
+        display: none;
+      }
+      cursor:pointer;
+
+    }
+    & ul#pack_menu_ul {
+        @media screen and (min-width:0px)  {
+          display:none;
+        }
+        @media screen and (min-width:800px)  {
+          display:flex;
+        }
+        justify-content: flex-start;
+        width:100%;
+        & li {
+        list-style: none;
+
+        @media screen and (min-width:800px)  {
+          padding-left:0.5rem;
+          padding-right:0.5rem;
+        }
+        @media screen and (min-width:1024px)  {
+          padding-left:1rem;
+          padding-right:1rem;
+        }
+        @media screen and (min-width:1200px)  {
+          padding-left:1.5rem;
+          padding-right:1.5rem;
+        }
+          &  a:link {
+            color: inherit;
+          }
+          &  a:visited {
+            color: inherit;
+          }
+      }
+    }
+  }
+  & #pack_menu_burger {
+    width:100%;
+    display:none;
+    @media screen and (max-width:800px)  {
+      display: flex;
+    }
+    &  a:link {
+      color: inherit;
+    }
+    &  a:visited {
+      color: inherit;
+    }
+    & ul {
+      display: flex;
+      width:100%;
+      flex-direction: column;
+      & li {
+        width:100%;
+        padding-left: 1rem;
+        padding-bottom: 0.5rem;
+        list-style: none;
+      }
+    }
+  }
+}
