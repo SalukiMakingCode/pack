@@ -103,6 +103,9 @@ body main article .bold {
 body main article .inArticle {
   display: none;
 }
+body main article .inArticle .exempleAnimate {
+  padding-left: 2rem;
+}
 body main article .inArticle#homepage {
   display: block;
 }

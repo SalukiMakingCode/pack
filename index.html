@@ -21,6 +21,7 @@
         <li><mark id="sendReset">reset.css</mark></li>
         <li><mark id="sendAnimate">animate.css</mark></li>
         <li><mark id="sendAlerte">alerte();</mark></li>
+        <li><mark id="sendAnimateCss">animateCss();</mark></li>
         <li><mark id="sendClickAlerte">clickAlerte();</mark></li>
         <li><mark id="sendMenu">createMenu();</mark></li>
         <li><mark id="sendId">id();</mark></li>
@@ -181,6 +182,21 @@
             <p>Vous pouvez bien sur lui affecté toutes les propriétés habituelles de document.querySelectorAll("idDeVotreElement");
                 comme, par exemple, selectAll("VotreElement").style.display=none</p>
         </div>
+
+        <div id="animated" class="inArticle">
+            <h2>animateCss();</h2>
+            <p class="bold">Utilisation : animateCss("votreElement", "animation");</p>
+            <p class="bold">`Utilisation : animateCss("votreElement", "animation").then((message) => {
+                            // Do something after the animation
+                            });`</p>
+            <p></p>
+            <p>Cette fonction permet d'ajouter une animation provenant de animate.css et de lui retirer après.</p>
+            <p>L'élément sélectionné doit être déclaré avec un # pour les id et un . pour les classes.</p>
+            <p>En option, elle peut déclencher une suite d'actions après que l'animation soit terminée.</p>
+            <p>Exemple :
+            <div id="my-element" class="exempleAnimate">animateCSS('#my-element', 'bounce');</div></p>
+        </div>
+
     </article>
 </main>
 <script src="./assets/js/article.js"></script>

@@ -99,6 +99,9 @@ body {
       }
       & .inArticle{
         display: none;
+        & .exempleAnimate {
+          padding-left: 2rem;
+        }
         &#homepage {
           display:block;
         }

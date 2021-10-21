@@ -8,3 +8,9 @@ elementMenu ("Accueil5", "lalala.html", "home", "1.5", "", "" );
 elementMenu ("Accueil6", "lalala.html", "home", "1.5", "", "" );
 elementMenu ("Accueil7", "lalala.html", "home", "1.5", "", "" );
 
+
+
+id("my-element").addEventListener("click", ()=> {
+    animateCss('#my-element', 'bounce');
+})
+

@@ -43,5 +43,13 @@ id("sendMenu").addEventListener("click", ()=> {
     id("menu").style.display="block";
 })
 
+id("sendAnimateCss").addEventListener("click", ()=> {
+    selectAll(".inArticle").forEach((element) =>id(element.id).style.display="none");
+    id("animated").style.display="block";
+})
+
 clickAlerte("demoAlerte", "Votre texte ici");
 clickAlerte("demoAlerte2", "Votre texte ici");
+id("my-element").addEventListener("click", ()=> {
+    animateCss('#my-element', 'bounce');
+})
