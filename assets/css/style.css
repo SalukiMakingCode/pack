@@ -103,8 +103,23 @@ body main article .bold {
 body main article .inArticle {
   display: none;
 }
-body main article .inArticle .exempleAnimate {
-  padding-left: 2rem;
+body main article .inArticle .containerExempleAnimate {
+  display: flex;
+  flex-flow: row wrap;
+  width: 100%;
+}
+body main article .inArticle .containerExempleAnimate .exempleAnimate {
+  margin-left: 1rem;
+  margin-bottom: 1rem;
+  padding-top: 1rem;
+  padding-bottom: 1rem;
+  padding-left: 0.5rem;
+  padding-right: 0.5rem;
+  font-size: 0.9rem;
+  cursor: pointer;
+  background-color: #bbbbbb;
+  display: block;
+  text-align: center;
 }
 body main article .inArticle#homepage {
   display: block;

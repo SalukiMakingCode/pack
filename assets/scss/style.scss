@@ -99,8 +99,23 @@ body {
       }
       & .inArticle{
         display: none;
-        & .exempleAnimate {
-          padding-left: 2rem;
+        & .containerExempleAnimate {
+          display: flex;
+          flex-flow: row wrap;
+          width: 100%;
+          & .exempleAnimate {
+            margin-left: 1rem;
+            margin-bottom: 1rem;
+            padding-top: 1rem;
+            padding-bottom: 1rem;
+            padding-left: 0.5rem;
+            padding-right: 0.5rem;
+            font-size: 0.9rem;
+            cursor: pointer;
+            background-color: #bbbbbb;
+            display: block;
+            text-align: center;
+          }
         }
         &#homepage {
           display:block;
