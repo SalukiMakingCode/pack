@@ -25,6 +25,7 @@
         <li><mark id="sendClickAlerte">clickAlerte();</mark></li>
         <li><mark id="sendMenu">createMenu();</mark></li>
         <li><mark id="sendId">id();</mark></li>
+        <li><mark id="sendLoad">load();</mark></li>
         <li><mark id="sendRand">rand();</mark></li>
         <li><mark id="sendSelect">select();</mark></li>
         <li><mark id="sendSelectAll">selectAll();</mark></li>
@@ -164,6 +165,16 @@
             <p>Simple et efficace, cette fonction remplace document.getElementById("idDeVotreElement");</p>
             <p>Vous pouvez bien sur lui affecté toutes les propriétés habituelles de document.getElementById("idDeVotreElement");
              comme, par exemple, id("idDeVotreElement").style.display=none</p>
+        </div>
+
+        <div id="load" class="inArticle">
+            <h2>load();</h2>
+            <p class="bold">Utilisation : load("fichier.html", "idDeVotreElement");</p>
+            <p>Simple et efficace, cette fonction place une page HTML dans un élément en pointant son ID </p>
+            <p>Attention : Le contenu étant chargé après le premier chargement de page, certaines fonctions javascript
+               (addEventListener par exemple) ne fonctionne pas car elle ne voit pas le texte affiché. Pour contrer cela, vous pouvez
+            utiliser un setTimeOut de quelques millisecondes sur la déclaration de ces fonctions.</p>
+
         </div>
 
         <div id="select" class="inArticle">

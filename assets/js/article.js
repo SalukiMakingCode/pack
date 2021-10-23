@@ -48,6 +48,11 @@ id("sendAnimateCss").addEventListener("click", ()=> {
     id("animated").style.display="block";
 })
 
+id("sendLoad").addEventListener("click", ()=> {
+    selectAll(".inArticle").forEach((element) =>id(element.id).style.display="none");
+    id("load").style.display="block";
+})
+
 clickAlerte("demoAlerte", "Votre texte ici");
 clickAlerte("demoAlerte2", "Votre texte ici");
 
