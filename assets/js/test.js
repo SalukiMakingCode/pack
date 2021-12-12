@@ -8,5 +8,5 @@ elementSousMenu ("sous menu 3", "lalala.html", "home", "1.5", "", "" );
 elementMenu ("Accueil4", "lalala.html", "home", "1.5", "", "" );
 elementMenu ("Accueil5", "lalala.html", "home", "1.5", "", "" );
 elementMenu ("Accueil6", "lalala.html", "home", "1.5", "", "" );
-elementMenu("Accueil7", "title8", "1.5", "");
+elementMenu("Accueil7", "lalala.html", "home", "1.5");
 
