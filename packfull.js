@@ -1,10 +1,10 @@
 // insère le css du pack
-let cssId2 = 'animateCss';  // you could encode the css path itself to generate id..
-if (!document.getElementById(cssId2))
+let cssId1 = 'animateCss';  // you could encode the css path itself to generate id..
+if (!document.getElementById(cssId1))
 {
     let head  = document.getElementsByTagName('head')[0];
     let link  = document.createElement('link');
-    link.id   = cssId2;
+    link.id   = cssId1;
     link.rel  = 'stylesheet';
     link.type = 'text/css';
     link.href = 'https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css';
@@ -39,11 +39,11 @@ function alerte(text) {
     document.getElementById("alert").style.display="flex";
 }
 // execute un code js quand on clique sur un element.id
-function clickId (id, operation) {
-    document.getElementById(id).addEventListener("click", ()=> {
-        eval(operation);
-    })
-}
+//function clickId (id, operation) {
+//    document.getElementById(id).addEventListener("click", ()=> {
+//        eval(operation);
+//    })
+//}
 // affiche une alerte() quand on clique sur un element (par id) avec le texte attendu
 function clickAlerte (id, text) {
     document.getElementById(id).addEventListener("click", ()=> {
@@ -53,18 +53,25 @@ function clickAlerte (id, text) {
 //execute un rand facile
 function rand(nombre, base) {
     if (base===undefined) base=1;
+
     return (Math.floor(Math.random()*nombre))+base;
 }
 
 function id(elementId){
+
     return document.getElementById(elementId);
 }
+
 function select(selector){
+
     return document.querySelector(selector);
 }
+
 function selectAll(selector){
+
     return document.querySelectorAll(selector);
 }
+
 function createMenu(backgroundColor, color, height, width, align) {
     let doc = document.body;
     if (document.getElementsByTagName("header").length===0) {
@@ -163,6 +170,87 @@ function elementMenu(name, url, title, fontSize, img, blank) {
     elemBurger.style.fontSize=fontSize;
     id("pack_menu_burger_ul").append(elemBurger);
 }
+
+function elementGroupMenu(name, title, fontSize, img) {
+    let size=(fontSize/3)*2;
+    let order=document.getElementsByClassName("pack_menu_li").length;
+    let elem = document.createElement('li');
+    let elemBurger = document.createElement('li');
+    if (fontSize==="" || fontSize==="no" || fontSize===undefined) {
+        let height=id("pack_menu_nav").style.height;
+        height=height.split("rem");
+        fontSize=(height[0]/11)*5;
+        size=(fontSize/3)*2;
+        fontSize=fontSize+"rem";
+    }
+    else fontSize=fontSize+"rem";
+    elem.id = "pack_menu_li"+order;
+    elem.className = "pack_menu_li";
+    if (img==="" || img===undefined) elem.innerHTML="<a href=\"javascript:askForSousMenu(\'pack_menu_li" + order + "\');\" title=\""+title+"\">"+name+"</a>";
+    else elem.innerHTML="<a href=\"javascript:askForSousMenu(\'pack_menu_li" + order + "\');\" title=\""+title+"\"><img src='"+img+"' alt='"+name+"' class='iconeMenu' style='height:"+size+"rem;'/>"+name+"</a>";
+    elem.style.fontSize=fontSize;
+    id("pack_menu_ul").append(elem);
+    elemBurger.id = "pack_menu_burger_li"+order;
+    elemBurger.className = "pack_menu_burger_li";
+    if (img==="" || img===undefined) elemBurger.innerHTML="<a href='#' title='"+title+"'>"+name+"</a>";
+    else elemBurger.innerHTML="<a href='#' title='"+title+"'><img src='"+img+"' alt='"+name+"' class='iconeMenu' style='height:"+size+"rem;'/>"+name+"</a>";
+    elemBurger.style.fontSize=fontSize;
+    id("pack_menu_burger_ul").append(elemBurger);
+}
+
+function askForSousMenu(id) {
+    let numId=id.substring(12, 17);
+    if (document.getElementById("pack_sous_menu_div" + numId).style.display==="none") {
+      document.getElementById("pack_sous_menu_div" + numId).style.display="block";
+    }
+    else {
+        document.getElementById("pack_sous_menu_div" + numId).style.display="none";
+    }
+}
+
+function elementSousMenu(name, url, title, fontSize, img, blank) {
+    let size=(fontSize/3)*2;
+    let order=document.getElementsByClassName("pack_menu_li").length-1;
+    let orderSousMenu=document.getElementsByClassName("pack_sous_menu_li" + order).length;
+    if (orderSousMenu===0) {
+        let elemDiv = document.createElement('div');
+        elemDiv.id="pack_sous_menu_div" + order;
+        elemDiv.className="pack_sous_menu_div";
+        elemDiv.style.position="absolute";
+        elemDiv.style.display="none";
+        elemDiv.style.backgroundColor=document.getElementsByTagName("header")[0].style.backgroundColor;
+        id("pack_menu_li" + order).append(elemDiv);
+        let space = document.createElement('div');
+        space.style.height = "0.8rem";
+        id("pack_sous_menu_div" + order).append(space);
+    }
+    let elem = document.createElement('li');
+    let elemBurger = document.createElement('li');
+    if (blank==="" || blank==="no" || blank===undefined) blank="";
+    else blank=" target='_blank'";
+    if (fontSize==="" || fontSize==="no" || fontSize===undefined) {
+        let height=id("pack_menu_nav").style.height;
+        height=height.split("rem");
+        fontSize=(height[0]/11)*5;
+        size=(fontSize/3)*2;
+        fontSize=fontSize+"rem";
+    }
+    else fontSize=fontSize+"rem";
+    elem.id = "pack_sous_menu_li" + orderSousMenu;
+    elem.className = "pack_sous_menu_li" + order;
+    if (img==="" || img===undefined) elem.innerHTML="<a href='"+url+"' "+blank+" title='"+title+"'>"+name+"</a>";
+    else elem.innerHTML="<a href='"+url+"' "+blank+" title='"+title+"'><img src='"+img+"' alt='"+name+"' class='iconeMenu' style='height:"+size+"rem;'/>"+name+"</a>";
+    elem.style.fontSize=fontSize;
+    id("pack_sous_menu_div" + order).append(elem);
+    size=(size/10)*8;
+    elemBurger.id = "pack_sous_menu_burger_li" + orderSousMenu;
+    elemBurger.className = "pack_sous_menu_burger_li" + order;
+    if (img==="" || img===undefined) elemBurger.innerHTML="<a href='"+url+"' "+blank+" title='"+title+"'>"+name+"</a>";
+    else elemBurger.innerHTML="<a href='"+url+"' "+blank+" title='"+title+"'><img src='"+img+"' alt='"+name+"' class='iconeMenu' style='height:"+size+"rem;'/>"+name+"</a>";
+    elemBurger.style.fontSize=fontSize;
+    id("pack_menu_burger_ul").append(elemBurger);
+}
+
 
 function elementMenuLogo(url, alt) {
     let img = document.createElement('img');
